@@ -27,7 +27,7 @@ A small Windows desktop app to start, stop and watch the local services you keep
 
 ## Run it
 
-Download `ServicePanel.exe` from the Releases page, or run from source:
+**[Download ServicePanel.exe](https://github.com/SnyderMining/service-panel/releases/latest)** (Windows may show a SmartScreen warning because the exe is unsigned; the source is here to check or build yourself), or run from source:
 
 ```bash
 python -m venv .venv
@@ -45,7 +45,7 @@ from a running process.
 
 - **AMD:** the `amd-smi` reader is written against the documented `amd-smi metric --json` /
   `static --json` output and tested against sample output, but not yet on real AMD hardware.
-  If the numbers look wrong on your card, please open an issue with the output of
+  If the numbers look wrong on your card, please [open an issue](https://github.com/SnyderMining/service-panel/issues/new?template=gpu-report.md) with the output of
   `amd-smi metric --json`. Without `amd-smi` it falls back to Windows counters automatically.
 - If a service runs as administrator, run Service Panel as administrator too, otherwise STOP
   cannot kill it.
